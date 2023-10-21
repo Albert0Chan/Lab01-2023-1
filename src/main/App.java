@@ -11,7 +11,13 @@ public class App {
     }
 
     public static int maior(int[] arrayDesordenado){
-        return -1;
+        int maior = arrayDesordenado[0];
+        for(int i = 1; i < arrayDesordenado.length ; i++){
+            if(arrayDesordenado[i] > maior){
+                maior = arrayDesordenado[i];
+            }
+        }
+        return maior;
     }
 
     public static Integer parMaisProximo(Integer[][] pares){
